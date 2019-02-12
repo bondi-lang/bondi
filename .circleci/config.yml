@@ -9,7 +9,7 @@ jobs:
 
       - run:
           name: make
-          command: opam install dune && make && make install
+          command: opam update && opam install dune && make && make install
 
       - run:
           name: run bondi
